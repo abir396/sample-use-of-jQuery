@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/main.css">
+    <script src="/jquery-3.7.1.js"></script>
+    <script src="/jquery.js"></script>
+</head>
+<body>
+    <from id="jobForm" class="applicationForm">
+        <h1>Job Applicaton Form</h1>
+        <h3>Thank you for your inerest in working with us. 
+            Please check below for avaailable job opportunities that meet your criteria and seend your application by filling out the Job Application Form.
+        </h3>
+
+        <div class="text">Name
+            <div class="text-box">
+                <input type="text" id="fName" name="first_name" placeholder="First" > 
+                <input type="text" id="lName" name="last_name" placeholder="Last" >
+            </div>
+        </div><br>
+
+        <span class="text">Email</span>
+        <div class="text-box">
+            <input type="email" id="email" name="email" placeholder="abc@example.com">
+        </div><br>
+
+        <div class="text">
+            <label for="position">What position are you applyiing for?</label>
+            <label for="date" class="text">Available date</label>
+            <div class="text-box">
+                <select name="position" id="role">
+                    <option value="select" id="option">-Select-</option>
+                    <option value="fresher" id="fresher">Fresher</option>
+                    <option value="experience" id="exp">Experience</option>
+                </select>
+                <input type="date" id="a-date" name="available-date">
+            </div><br>
+
+        <div>
+            <p>What is your  current employee status ?</p>
+            <div>
+                <input type="radio" id="employed" value="Employed">
+                  <label for="employed">Employed</label>
+                  <input type="radio" id="self_employed" value="Self-Employed">
+                  <label for="self_employed">Self-Employed</label>
+            </div>
+            <div>
+                <input type="radio" id="unemployed" value="Unemployed">
+                  <label for="unemployed">Unemployed</label>
+                  <input type="radio" id="student" value="Student">
+                  <label for="student">Student</label>
+            </div>
+        </div><br>
+
+        <div class="text">
+            <span class="text">Please provide your resume link </span>
+            <span class="text">Please upload your resume </span>
+        </div>
+        <div class="text-box">
+            <input type="text" id="link"  placeholder="https://www.example.com/">
+            <input type="file" id="resumeFile" placeholder="Resume">
+        </div><br>
+
+        <div>
+            <span class="text">Do you have references?(Optional)</span>
+            <div class="text-box">
+                <input type="text" id="fName" name="first_name" placeholder="First" > 
+                <input type="text" id="lName" name="last_name" placeholder="Last" >
+            </div>
+        </div><br>
+
+        <span class="text">Reference Email</span>
+        <div class="text-box">
+            <input type="email" id="email" name="email" placeholder="abc@example.com">
+        </div><br>
+        <input type="reset" value="Reset">
+        <input id="applyBtn" type="submit" value="Apply">
+    </from>
+    <div id="storeData">
+        
+
+    </div>
+</body>
+</html>
